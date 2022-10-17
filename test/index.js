@@ -33,10 +33,10 @@
   
   document
     .getElementById("ask-hello")
-    .addEventListener("click", askHello); 
+    .addEventListener("click", askHello); */
 
 
- /*let button = document.getElementById('button');
+/*let button = document.getElementById('button');
 let image = document.getElementById('image');
 let pokeNumber = document.getElementById('number');
 let pokeName = document.getElementById('name');
@@ -59,7 +59,7 @@ const changePokemon = async() => {
 
 
 changePokemon();
-button.addEventListener("click", changePokemon); */
+button.addEventListener("click", changePokemon); /*
 
 
 /*let test = document.getElementById("test")
@@ -80,11 +80,12 @@ const phrase = async() => {
 phrase() */
 
 
+
 let titre = document.getElementById("titre")
 
 const h = async() => {
 
-  let requestString = 'http://localhost:1337/api/avis-temoignages/3';
+  let requestString = 'http://195.14.105.123:1337/api/articles/2';
 
   let data = await fetch(requestString)
   console.log(data)
@@ -92,7 +93,7 @@ const h = async() => {
   let response = await data.json();
   console.log(response)
 
-  titre.textContent = response.data.attributes.avis
+  titre.textContent = response.data.attributes.titre
 }
 
 h() 
@@ -101,7 +102,7 @@ let texte = document.getElementById("texte")
 
 const p = async() => {
 
-  let requestString = 'http://localhost:1337/api/avis-temoignages/3';
+  let requestString = 'http://195.14.105.123:1337/api/articles/2';
 
   let data = await fetch(requestString)
   console.log(data)
@@ -109,7 +110,7 @@ const p = async() => {
   let response = await data.json();
   console.log(response)
 
-  texte.textContent = response.data.attributes.temoignages
+  texte.textContent = response.data.attributes.contenu
 }
 
 p() 
