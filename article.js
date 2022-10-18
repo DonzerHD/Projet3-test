@@ -31,6 +31,7 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
             eltArticle.appendChild(eltLien)
             eltLien.href = '#'
             eltLien.classList.add('lien')
+            eltLien.href = 'testpage.html'
 
             let eltImage = document.createElement('img');
             eltLien.appendChild(eltImage);
@@ -41,6 +42,8 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
             eltLien.appendChild(eltTitre);
             eltTitre.innerText = article.attributes.Titre;
             eltTitre.classList.add('Titre');
+
+            
 
         }
 

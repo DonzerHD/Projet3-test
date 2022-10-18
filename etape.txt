@@ -1,0 +1,48 @@
+{
+    "url": "script/track/calais-ardres.gpx",
+    "popup": "Calais - Ardres"
+  },
+  {
+    "url": "script/track/ardres-watten.gpx",
+    "popup": "Ardres - Watten"
+  },
+  {
+    "url": "script/track/watten-st-omer.gpx",
+    "popup": "Watten - St-omer"
+  },
+  {
+    "url": "script/track/st-omer-aire-sur-la-lys.gpx",
+    "popup": "St-omer - Aire sur la lys"
+  },
+  {
+    "url": "script/track/aire-sur-la-lys-st-venant.gpx",
+    "popup": "Aire sur la lys - St-venant"
+  },
+  {
+    "url": "script/track/st-venant-bethune.gpx",
+    "popup": "St-venant - Bethune"
+  },
+  {
+    "url": "script/track/bethune-olhain.gpx",
+    "popup": "bethune - Olhain"
+  },
+  {
+    "url": "script/track/olhain-angres.gpx",
+    "popup": "Olhain - Angres"
+  },
+  {
+    "url": "script/track/angres-lens.gpx",
+    "popup": "Angres - Lens"
+  },
+  {
+    "url": "script/track/lens-don.gpx",
+    "popup": "Lens - Don"
+  },
+  {
+    "url": "script/track/don-lille.gpx",
+    "popup": "Don - Lille"
+  },
+  {
+    "url": "script/track/lille-estaimpuis.gpx",
+    "popup": "Lille Estaimpuis"
+  }
