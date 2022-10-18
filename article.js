@@ -17,19 +17,15 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
             modif.id = n;
             n++;
         }   
-        let eltConteneur = document.querySelector('.conteneur-article')
+        let eltConteneur = document.querySelector('.conteneur-article')   
         for (let article of value.data) {
             let eltArticle = document.createElement('article');
             eltConteneur.appendChild(eltArticle);
             eltArticle.classList.add('article-child');
             console.log(value.data);
-           
-            let eltNul = document.querySelector('.conteneur-article')
-
 
             let eltLien = document.createElement('a')
             eltArticle.appendChild(eltLien)
-            eltLien.href = '#'
             eltLien.classList.add('lien')
             eltLien.href = 'testpage.html'
 
