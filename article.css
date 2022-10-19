@@ -45,6 +45,7 @@ body{
 
 .article-child:nth-child(3){
     flex: 0 0 65%;
+
 }
 
 .article-child:nth-child(2){

@@ -36,7 +36,7 @@
     .addEventListener("click", askHello); */
 
 
-/*let button = document.getElementById('button');
+let button = document.getElementById('button');
 let image = document.getElementById('image');
 let pokeNumber = document.getElementById('number');
 let pokeName = document.getElementById('name');
@@ -59,7 +59,7 @@ const changePokemon = async() => {
 
 
 changePokemon();
-button.addEventListener("click", changePokemon); /*
+button.addEventListener("click", changePokemon); 
 
 
 /*let test = document.getElementById("test")

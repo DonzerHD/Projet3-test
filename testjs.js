@@ -1,6 +1,11 @@
+/* Recup URL ID */
 
+const recup = window.location.search.split("?id=").join("")
+console.log(recup)
+
+/* Create Element */
 let url = 'http://195.14.105.123:1337'
-fetch("http://195.14.105.123:1337/api/articles/2?populate=*")
+fetch("http://195.14.105.123:1337/api/articles/" + recup + "?populate=*")
 .then(function(res){
     if (res.ok) {
         return res.json();
@@ -9,12 +14,10 @@ fetch("http://195.14.105.123:1337/api/articles/2?populate=*")
      console.log(value);
 
         let eltConteneur = document.querySelector('.conteneur')
-        let article = "http://195.14.105.123:1337/api/articles/2?populate=*"
         let eltArticle = document.createElement('article');
             
             eltConteneur.appendChild(eltArticle);
             eltArticle.classList.add('article-child');
-            console.log(article);
 
             let eltTitre = document.createElement('h2')
             eltArticle.appendChild(eltTitre);
@@ -36,10 +39,16 @@ fetch("http://195.14.105.123:1337/api/articles/2?populate=*")
             eltTexte.innerText = value.data.attributes.Texte;
             eltTexte.classList.add('Texte');
 
+            let eltImage2 = document.createElement('img');
+            eltArticle.appendChild(eltImage2);
+            eltImage2.src = url + value.data.attributes.Image2.data.attributes.url;
+            eltImage2.classList.add('image2');
 
-            
-
-        
+            let eltTexte2 = document.createElement('p')
+            eltArticle.appendChild(eltTexte2);
+            eltTexte2.innerText = value.data.attributes.Texte;
+            eltTexte2.classList.add('Texte2');
+       
 
     })
     .catch(function (err) {
