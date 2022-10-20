@@ -1,6 +1,6 @@
 
 let url = 'http://195.14.105.123:1337'
-fetch("http://195.14.105.123:1337/api/articles?populate=*")
+fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     .then(function (res) {
         if (res.ok) {
             return res.json();
@@ -9,14 +9,26 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
     .then(function (value) {
                                   
         let eltConteneur = document.querySelector('.conteneur-article')   
-        for (let article of value.data)
+        for (let etape of value.data)
         {           
             let eltArticle = document.createElement('article');
             eltConteneur.appendChild(eltArticle);
             eltArticle.classList.add('article-child');
-            console.log(article);
+            console.log(etape);
 
-            let articleId = article.id
+            let eltTitre = document.createElement('h2')
+            eltArticle.appendChild(eltTitre);
+            eltTitre.innerText = etape.attributes.name;
+            eltTitre.classList.add('Titre');
+
+            let eltImage = document.createElement('img');
+            eltArticle.appendChild(eltImage);
+            eltImage.src = url + etape.attributes.img.data.attributes.url;
+            let coco =  url + etape.attributes.img.data.attributes.url
+            console.log(eltImage)
+            eltImage.classList.add('image');
+
+          /*  let articleId = article.id
             let eltLien = document.createElement('a')
             eltArticle.appendChild(eltLien)
             eltLien.classList.add('lien')
@@ -31,7 +43,7 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
             let eltTitre = document.createElement('h2')
             eltLien.appendChild(eltTitre);
             eltTitre.innerText = article.attributes.Titre;
-            eltTitre.classList.add('Titre');
+            eltTitre.classList.add('Titre'); */
 
         }
 
