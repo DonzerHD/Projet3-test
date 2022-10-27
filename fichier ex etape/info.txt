@@ -1,0 +1,13 @@
+name : Lille - Estaimpuis
+montee : 104m
+descente : 100m
+distance : 27,6km
+texteEtape: Lille est une ville du nord de la France, préfecture du département du Nord et chef-lieu de la région Hauts-de-France.
+
+Avec 234 475 habitants intra-muros au dernier recensement en 2019, Lille est la dixième commune la plus peuplée de France, mais aussi la principale commune de la Métropole européenne de Lille, qui rassemble 94 autres communes dont Roubaix, Tourcoing et Villeneuve-d'Ascq et compte près de 1,2 million d’habitants.
+
+Dans sa partie française, son unité urbaine et ses 1 051 609 habitants en 2019 font de Lille la quatrième agglomération de France derrière Paris, Lyon et Marseille, tout comme son aire d'attraction qui rassemble 1,5 million d'habitants. Plus largement, elle appartient à une vaste conurbation formée avec les villes belges de Mouscron, Courtrai, Tournai et Menin, qui a donné naissance en janvier 2008 à l'Eurométropole Lille-Kortrijk-Tournai, premier Groupement européen de coopération territoriale (GECT), qui totalise plus de 2,1 millions d'habitants. Elle exerce également une influence importante sur un territoire de plus de 3,8 millions d'habitants appelé « aire métropolitaine de Lille », fortement urbanisé et dense, comprenant notamment l'ancien bassin minier du Nord-Pas-de-Calais et les agglomérations d'Arras et Cambrai.
+
+Centre culturel important au croisement des aires picarde et flamande, son nom en ancien français est L'Isle et se réfèrerait à sa localisation primitive supposée près d'une île des marécages de la vallée de la Deûle où elle a été fondée. Son nom en flamand français est Ryssel /riːsəl/), et en flamand occidental Rijsel. Le nom Rijsel n'est usité qu'en région flamande de Belgique, les Néerlandais utilisant le nom « Lille ».
+
+etapeId : 11
